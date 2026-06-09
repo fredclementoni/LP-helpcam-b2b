@@ -132,15 +132,17 @@
   /* ── POSICIONAMENTO [azul] ── */
   .bg-blue{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff}
   .bg-blue .eyebrow{color:#bfe6f7}
-  #posicionamento{
-    background-image:linear-gradient(to top right,rgba(41,171,226,.95) 0%,rgba(41,171,226,.55) 65%),url('mulher de fone.JPG');
-    background-position:0 0, right 8% center;
-    background-size:auto, auto 85%;
-    background-repeat:no-repeat;
-    color:#fff;
-  }
+  #posicionamento{background:#29ABE2;color:#fff}
   #posicionamento .eyebrow{color:#e0f4ff}
   #posicionamento h2{color:#fff}
+  @media(max-width:860px){
+    #posicionamento{
+      background-image:linear-gradient(rgba(41,171,226,.88),rgba(41,171,226,.88)),url('mulher de fone.JPG');
+      background-size:cover;
+      background-position:center;
+    }
+    #posicionamento .pos>div:last-child{display:none}
+  }
   .bg-blue .section-head p{color:rgba(255,255,255,.88)}
   .bg-blue .stat{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2)}
   .bg-blue .stat strong{color:#fff}
