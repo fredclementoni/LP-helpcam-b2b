@@ -186,12 +186,14 @@
   .plan{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:36px;
     transition:box-shadow .25s ease}
   .plan:hover{box-shadow:0 12px 32px rgba(26,128,180,.10)}
-  .plan.featured{border-color:#14a060;position:relative;
-    box-shadow:0 8px 28px rgba(21,160,96,.18)}
+  .plan.featured{border-color:var(--primary);position:relative;
+    box-shadow:0 8px 28px rgba(26,128,180,.18)}
   .plan.featured::after{content:"Recomendado";position:absolute;top:22px;right:22px;
-    background:#1DC878;color:#fff;font-size:.7rem;font-weight:700;
+    background:var(--primary);color:#fff;font-size:.7rem;font-weight:700;
     padding:4px 12px;border-radius:50px;letter-spacing:.06em}
-  .plan.featured .price{color:#1DC878}
+  .plan.featured .price{color:var(--primary)}
+  #planos .plan:not(.featured){background:#e8f4fb;border-color:#c2dff0}
+  #planos .plan:not(.featured):hover{background:#d0eaf6;box-shadow:0 12px 32px rgba(26,128,180,.12)}
   #prova .stat{background:var(--surface);border-color:var(--line)}
   #prova .stat strong{color:var(--primary)}
   #prova .stat span{color:var(--muted)}
@@ -402,7 +404,7 @@
           <li>Acumulativo por 24 meses</li>
           <li>Atendimento 100% online</li>
         </ul>
-        <a href="https://wa.me/5511974545423" class="btn" style="width:100%;text-align:center;display:block;background:#1DC878;color:#fff;border-radius:50px">Quero conhecer o plano</a>
+        <a href="https://wa.me/5511974545423" class="btn" style="width:100%;text-align:center;display:block;background:#1a80b4;color:#fff;border-radius:50px">Quero conhecer o plano</a>
       </div>
       <div class="plan">
         <h3>Como contratar</h3>
