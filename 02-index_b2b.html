@@ -224,19 +224,16 @@
   .foot .logo{color:var(--primary);font-weight:800}
 
   /* ── ESPECIALIDADES ── */
-  .esp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;margin-bottom:48px}
-  .esp-card{display:flex;flex-direction:column;align-items:center;gap:12px;background:#fff;
-    border:1px solid var(--line);border-radius:16px;padding:24px 16px 20px;text-align:center;
-    transition:box-shadow .2s ease,transform .2s ease,border-color .2s ease}
-  .esp-card:hover{box-shadow:0 4px 20px rgba(26,128,180,.12);transform:translateY(-3px);border-color:var(--primary)}
-  .esp-icon-wrap{width:56px;height:56px;background:#e6f2fa;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .esp-icon-wrap svg{width:30px;height:30px}
-  .esp-name{font-size:.83rem;font-weight:600;color:var(--text);line-height:1.3}
-  .esp-note{text-align:center;font-size:.88rem;color:var(--muted)}
+  .esp-list{columns:3;column-gap:40px;list-style:none;margin-bottom:40px}
+  .esp-list li{break-inside:avoid;padding:8px 0;border-bottom:1px solid var(--line);
+    font-size:.95rem;color:var(--text);display:flex;align-items:center;gap:10px}
+  .esp-list li::before{content:"";width:8px;height:8px;border-radius:50%;
+    background:var(--primary);flex-shrink:0}
+  .esp-note{text-align:center;font-size:.88rem;color:var(--muted);margin-top:8px}
   .esp-note a{color:var(--primary);font-weight:600;text-decoration:none}
   .esp-note a:hover{opacity:.75}
-  @media(max-width:640px){.esp-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}}
+  @media(max-width:760px){.esp-list{columns:2}}
+  @media(max-width:480px){.esp-list{columns:1}}
 </style>
 </head>
 <body>
@@ -383,26 +380,26 @@
       <h2>Uma solução para cada necessidade do colaborador</h2>
       <p>Especialidades com profissionais ativos no catálogo — a base é atualizada conforme novos cadastros são integrados.</p>
     </div>
-    <div class="esp-grid">
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="16" r="7" stroke="#1a80b4" stroke-width="1.8"/><path d="M20 23c0 0-1 3-1 5" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M17 28h6" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M17 13c1-2 5-3 6 0" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M20 9v2" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Psicologia</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8c-4 0-7 4-5 9l-2 13h14l-2-13c2-5-1-9-5-9z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M17 13c1-2 4-2 6 0" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M15 19h10" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Nutrição</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="15" r="6" stroke="#1a80b4" stroke-width="1.8"/><path d="M20 9v2M14.5 12l1.5 1M25.5 12l-1.5 1" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M14 23h12l1 8H13l1-8z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 23v4M22 23v4" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Psicopedagogia</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M10 20h4M26 20h4" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><rect x="14" y="16" width="12" height="8" rx="2" stroke="#1a80b4" stroke-width="1.8"/><rect x="8" y="17" width="2.5" height="6" rx="1.2" stroke="#1a80b4" stroke-width="1.8"/><rect x="29.5" y="17" width="2.5" height="6" rx="1.2" stroke="#1a80b4" stroke-width="1.8"/></svg></div><span class="esp-name">Personal Training</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="10" r="2.5" stroke="#1a80b4" stroke-width="1.8"/><path d="M20 13v7" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M20 17l-7 4M20 17l7 4" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M20 20v7" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M17 27l-2 4M23 27l2 4" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Yoga</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8v2M20 30v2" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M14 13h8a3 3 0 010 6h-4a3 3 0 000 6h9" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Consultoria Financeira</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M20 9a9 9 0 100 18A9 9 0 0020 9z" stroke="#1a80b4" stroke-width="1.8"/><path d="M20 9c-2.5 2-4 5-4 9s1.5 7 4 9" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M20 9c2.5 2 4 5 4 9s-1.5 7-4 9" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M11 18h18" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M11 22h18" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Inglês</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="16" r="7" stroke="#1a80b4" stroke-width="1.8"/><path d="M20 12v4l2.5 2.5" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 25l-2 6M26 25l2 6" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M12 31h16" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Psiquiatria</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8c-2.5 0-4 1.5-4 3.5V14h8v-2.5C24 9.5 22.5 8 20 8z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 14h14v12a7 7 0 01-14 0V14z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M17 20h6M20 17v6" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Enfermagem</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8l-3 5h6l-3-5z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M17 13l-5 19h16l-5-19" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 21h10" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Personal Styling</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8v4" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M12 12l16 0" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M12 12l-3 8c0 2.5 2 4 3 4s3-1.5 3-4l-3-8z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M28 12l-3 8c0 2.5 2 4 3 4s3-1.5 3-4l-3-8z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M17 32h6M20 24v8" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Advocacia</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M15 20a5 5 0 0010 0v-6a5 5 0 00-10 0v6z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 20a8 8 0 0016 0" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M20 28v4M17 32h6" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Fonoaudiologia</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="13" r="5" stroke="#1a80b4" stroke-width="1.8"/><path d="M11 32c0-5 4-8 9-8s9 3 9 8" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M23 21l4-2 2 4" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="esp-name">Pediatria</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M10 32h20M13 32V20l7-10 7 10v12" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><rect x="17" y="24" width="6" height="8" rx="1" stroke="#1a80b4" stroke-width="1.8"/><path d="M8 32h24" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Arquitetura</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M11 28l5-7 5 4 5-8 4 5" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="9" y="10" width="22" height="20" rx="2" stroke="#1a80b4" stroke-width="1.8"/></svg></div><span class="esp-name">Consultoria de Negócios</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="10" r="2.5" stroke="#1a80b4" stroke-width="1.8"/><path d="M20 13v8" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M14 17h12" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M16 21l-3 10M24 21l3 10" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><path d="M13 26h14" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Fisioterapia</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M10 10h15l5 5v16H10V10z" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M25 10v5h5" stroke="#1a80b4" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 19h12M14 23h8" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Reforço Escolar</span></div>
-      <div class="esp-card"><div class="esp-icon-wrap"><svg viewBox="0 0 40 40" fill="none"><path d="M24 9c2.5 1 4 3 4 6 0 5-4 9-9 14l-4 4c-1.5 1.5-4 0-4-2s1.5-3.5 3-3.5" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/><circle cx="24" cy="9" r="2" stroke="#1a80b4" stroke-width="1.8"/><path d="M17 24l4-4M19 27l2-3" stroke="#1a80b4" stroke-width="1.8" stroke-linecap="round"/></svg></div><span class="esp-name">Saxofone</span></div>
-    </div>
+    <ul class="esp-list">
+      <li>Psicologia</li>
+      <li>Nutrição</li>
+      <li>Psicopedagogia</li>
+      <li>Personal Training</li>
+      <li>Yoga</li>
+      <li>Consultoria Financeira</li>
+      <li>Inglês</li>
+      <li>Psiquiatria</li>
+      <li>Enfermagem</li>
+      <li>Personal Styling</li>
+      <li>Advocacia</li>
+      <li>Fonoaudiologia</li>
+      <li>Pediatria</li>
+      <li>Arquitetura</li>
+      <li>Consultoria de Negócios</li>
+      <li>Fisioterapia</li>
+      <li>Reforço Escolar</li>
+      <li>Saxofone</li>
+    </ul>
     <p class="esp-note">Não encontrou uma especialidade? <a href="https://wa.me/5511974545423">Fale com nosso time →</a></p>
   </div>
 </section>
