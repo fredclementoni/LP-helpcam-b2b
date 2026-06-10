@@ -189,14 +189,13 @@
   .plan{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:36px;
     transition:box-shadow .25s ease}
   .plan:hover{box-shadow:0 12px 32px rgba(26,128,180,.10)}
-  .plan.featured{border-color:var(--primary);position:relative;
-    box-shadow:0 8px 28px rgba(26,128,180,.18)}
-  .plan.featured::after{content:"Recomendado";position:absolute;top:22px;right:22px;
-    background:var(--primary);color:#fff;font-size:.7rem;font-weight:700;
-    padding:4px 12px;border-radius:50px;letter-spacing:.06em}
-  .plan.featured .price{color:var(--primary)}
-  #planos .plan:not(.featured){background:#fff;border-color:var(--line)}
-  #planos .plan:not(.featured):hover{background:#f0f8fc;box-shadow:0 12px 32px rgba(26,128,180,.12)}
+  .plan.model{border-color:var(--primary);box-shadow:0 8px 28px rgba(26,128,180,.12)}
+  .plan h3{font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:20px}
+  .model-row{display:flex;justify-content:space-between;align-items:baseline;
+    padding:11px 0;border-bottom:1px solid var(--line);gap:16px}
+  .model-row:last-child{border-bottom:none}
+  .model-row .lbl{color:var(--text);font-weight:600;font-size:.9rem;flex-shrink:0}
+  .model-row .val{color:var(--muted);font-size:.9rem;text-align:right}
   #prova .stat{background:var(--surface);border-color:var(--line)}
   #prova .stat strong{color:var(--primary)}
   #prova .stat span{color:var(--muted)}
@@ -392,23 +391,20 @@
 <section id="planos" class="surface-bg">
   <div class="wrap">
     <div class="section-head center">
-      <p class="eyebrow">Planos</p>
+      <p class="eyebrow">Modelo corporativo</p>
       <h2>Cuidar das pessoas também cabe no orçamento.</h2>
     </div>
     <div class="pricing">
-      <div class="plan featured">
-        <h3>Plano corporativo</h3>
-        <div class="price">R$59,99<span>/colaborador/mês</span></div>
-        <ul>
-          <li>Crédito direto para o colaborador</li>
-          <li>Descontos exclusivos em minutos</li>
-          <li>Acumulativo por 24 meses</li>
-          <li>Atendimento 100% online</li>
-        </ul>
-        <a href="https://wa.me/5511974545423" class="btn" style="width:100%;text-align:center;display:block;background:#1a80b4;color:#fff;border-radius:50px">Quero conhecer o plano</a>
+      <div class="plan model">
+        <h3>Modelo corporativo</h3>
+        <div class="model-row"><span class="lbl">Crédito mensal</span><span class="val">R$ 59,99 por colaborador</span></div>
+        <div class="model-row"><span class="lbl">Retorno coletivo</span><span class="val">50% do valor não utilizado retorna para a empresa</span></div>
+        <div class="model-row"><span class="lbl">Descontos exclusivos</span><span class="val">Até 20% nas consultas (para o colaborador)</span></div>
+        <div class="model-row"><span class="lbl">Contrato sugerido</span><span class="val">12 meses</span></div>
+        <div class="model-row"><span class="lbl">Implantação</span><span class="val">Imediata</span></div>
       </div>
       <div class="plan">
-        <h3>Como contratar</h3>
+        <h3 style="color:var(--text)">Como contratar</h3>
         <ul>
           <li>1. Fale com um especialista no WhatsApp</li>
           <li>2. Defina o número de colaboradores</li>
