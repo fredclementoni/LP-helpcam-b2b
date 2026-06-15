@@ -249,8 +249,8 @@
   @media(max-width:600px){.esp-list{grid-template-columns:1fr}}
 
   /* ── ROTINA ── */
-  .rot-item{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
-  .rot-item:last-of-type{border-bottom:1px solid var(--line)}
+  .rot-item{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:24px}
+  .rot-item:last-of-type{margin-bottom:0}
   .rot-img{overflow:hidden;min-height:340px}
   .rot-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
   .rot-item:hover .rot-img img{transform:scale(1.04)}
