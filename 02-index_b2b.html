@@ -142,14 +142,18 @@
   /* ── POSICIONAMENTO [azul] ── */
   .bg-blue{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff}
   .bg-blue .eyebrow{color:#bfe6f7}
-  #posicionamento{background:#29ABE2;color:#fff}
+  #posicionamento{background:#29ABE2;color:#fff;overflow:hidden}
   #posicionamento .eyebrow{color:#e0f4ff}
   #posicionamento h2{color:#fff}
+  #posicionamento .pos{align-items:flex-end}
+  #posicionamento .pos>div:last-child{display:flex;align-items:flex-end;justify-content:center}
+  #posicionamento .pos>div:last-child img{width:100%;max-width:460px;display:block;
+    margin-bottom:-60px;object-fit:contain;object-position:bottom}
   @media(max-width:860px){
     #posicionamento{
-      background-image:linear-gradient(rgba(41,171,226,.88),rgba(41,171,226,.88)),url('imgs/ChatGPT Image 10 de jun. de 2026, 11_08_09.png');
+      background-image:linear-gradient(rgba(41,171,226,.88),rgba(41,171,226,.88)),url('imgs/ChatGPT Image 15 de jun. de 2026, 09_46_00.png');
       background-size:cover;
-      background-position:center;
+      background-position:center top;
     }
     #posicionamento .pos>div:last-child{display:none}
   }
@@ -340,7 +344,7 @@
       </div>
     </div>
     <div>
-      <img src="imgs/ChatGPT Image 10 de jun. de 2026, 11_08_09.png" alt="Mulher com fone" style="width:100%;max-width:340px;display:block;margin:0 auto">
+      <img src="imgs/ChatGPT Image 15 de jun. de 2026, 09_46_00.png" alt="Mulher com fone">
     </div>
   </div>
 </section>
