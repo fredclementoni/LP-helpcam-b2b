@@ -237,6 +237,30 @@
   .esp-note a{color:var(--primary);font-weight:600;text-decoration:none}
   .esp-note a:hover{opacity:.75}
   @media(max-width:600px){.esp-list{grid-template-columns:1fr}}
+
+  /* ── ROTINA ── */
+  .rot-item{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+  .rot-item:last-of-type{border-bottom:1px solid var(--line)}
+  .rot-img{overflow:hidden;min-height:340px}
+  .rot-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+  .rot-item:hover .rot-img img{transform:scale(1.04)}
+  .rot-copy{display:flex;flex-direction:column;justify-content:center;padding:52px 56px;background:var(--surface)}
+  .rot-moment{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--primary);background:var(--primary-soft);
+    border-radius:50px;padding:4px 13px;margin-bottom:18px}
+  .rot-copy h3{font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:800;letter-spacing:-.02em;
+    line-height:1.15;color:var(--text);margin-bottom:12px}
+  .rot-copy h3 em{font-style:normal;color:var(--primary)}
+  .rot-copy p{color:var(--muted);font-size:.97rem;line-height:1.65;max-width:36ch}
+  .rot-detail{margin-top:24px;display:flex;align-items:center;gap:8px;
+    color:var(--muted);font-size:.83rem;font-weight:500}
+  .rot-detail span{display:inline-block;width:6px;height:6px;border-radius:50%;
+    background:var(--primary);flex-shrink:0}
+  @media(max-width:760px){
+    .rot-item{grid-template-columns:1fr}
+    .rot-img{min-height:220px;order:0!important}
+    .rot-copy{padding:36px 24px;order:1!important}
+  }
 </style>
 </head>
 <body>
@@ -406,6 +430,55 @@
     <p class="esp-note">Não encontrou uma especialidade? <a href="https://wa.me/5511974545423">Fale com nosso time →</a></p>
   </div>
 </section>
+
+<!-- [S_ROTINA] UM BENEFÍCIO PARA CADA MOMENTO DA VIDA -->
+<section id="rotina" style="padding:72px 0 80px;background:#fff">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2>Um benefício para cada <span class="primary">momento da vida.</span></h2>
+      <p>Da manhã ao fim do dia, a Helpcam cobre o que o colaborador precisa — quando ele precisa.</p>
+    </div>
+  </div>
+  <div style="max-width:var(--max);margin:0 auto;padding:0 24px">
+    <div class="rot-item">
+      <div class="rot-img" style="order:1"><img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80" alt="Yoga"></div>
+      <div class="rot-copy" style="order:2">
+        <span class="rot-moment">Antes do trabalho</span>
+        <h3>Yoga para começar com <em>mais equilíbrio.</em></h3>
+        <p>Uma sessão rápida antes de abrir o computador já muda o dia inteiro. Corpo e mente alinhados desde cedo.</p>
+        <div class="rot-detail"><span></span>Sessões a partir de 30 minutos · 100% online</div>
+      </div>
+    </div>
+    <div class="rot-item">
+      <div class="rot-copy" style="order:1">
+        <span class="rot-moment">Na pausa do almoço</span>
+        <h3>Psicologia para lidar com <em>a pressão.</em></h3>
+        <p>Trinta minutos de escuta ativa valem mais do que horas tentando se concentrar. Sem lista de espera, sem deslocamento.</p>
+        <div class="rot-detail"><span></span>Agendamento imediato · profissionais verificados</div>
+      </div>
+      <div class="rot-img" style="order:2"><img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=800&q=80" alt="Psicologia"></div>
+    </div>
+    <div class="rot-item">
+      <div class="rot-img" style="order:1"><img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=800&q=80" alt="Finanças"></div>
+      <div class="rot-copy" style="order:2">
+        <span class="rot-moment">Fim do mês</span>
+        <h3>Consultoria financeira <em>sem julgamentos.</em></h3>
+        <p>Uma conversa com um especialista resolve dúvidas que travam a vida por meses. Organização, dívidas, planejamento.</p>
+        <div class="rot-detail"><span></span>Consulta por vídeo · 1 crédito</div>
+      </div>
+    </div>
+    <div class="rot-item">
+      <div class="rot-copy" style="order:1">
+        <span class="rot-moment">No fim de semana</span>
+        <h3>Personal Styling para <em>fortalecer a autoestima.</em></h3>
+        <p>Sentir-se bem também passa pela forma como a pessoa se enxerga. Um olhar externo muda a relação com a própria imagem.</p>
+        <div class="rot-detail"><span></span>Guarda-roupa, imagem pessoal e estilo</div>
+      </div>
+      <div class="rot-img" style="order:2"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80" alt="Personal Styling"></div>
+    </div>
+  </div>
+</section>
+<!-- [/S_ROTINA] -->
 
 <!-- [S2] PROVA SOCIAL -->
 <section id="prova" style="background:#fff">
