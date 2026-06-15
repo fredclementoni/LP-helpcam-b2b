@@ -142,15 +142,19 @@
   /* ── POSICIONAMENTO [azul] ── */
   .bg-blue{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff}
   .bg-blue .eyebrow{color:#bfe6f7}
-  #posicionamento{background:#29ABE2;color:#fff;overflow:hidden;padding-top:36px}
+  #posicionamento{color:#fff;overflow:hidden;padding-top:36px;
+    background:
+      linear-gradient(100deg,rgba(41,171,226,.97) 0%,rgba(41,171,226,.90) 42%,rgba(41,171,226,.55) 72%,rgba(41,171,226,.25) 100%),
+      url('imgs/ChatGPT Image 15 de jun. de 2026, 09_46_00.png') right center/cover no-repeat}
   #posicionamento .eyebrow{color:#e0f4ff}
   #posicionamento h2{color:#fff}
-  #posicionamento .pos{align-items:flex-end}
-  #posicionamento .pos>div:last-child{display:flex;align-items:flex-end;justify-content:center}
-  #posicionamento .pos>div:last-child img{width:100%;max-width:460px;display:block;
-    margin-bottom:-60px;object-fit:contain;object-position:bottom}
+  #posicionamento .pos>div:last-child{display:none}
   @media(max-width:860px){
-    #posicionamento .pos>div:last-child{display:none}
+    #posicionamento{
+      background:
+        linear-gradient(rgba(41,171,226,.88),rgba(41,171,226,.88)),
+        url('imgs/ChatGPT Image 15 de jun. de 2026, 09_46_00.png') center center/cover no-repeat;
+    }
   }
   .bg-blue .section-head p{color:rgba(255,255,255,.88)}
   .bg-blue .stat{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2)}
