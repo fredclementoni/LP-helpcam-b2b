@@ -251,6 +251,8 @@
   /* ── ROTINA ── */
   .rot-item{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:24px}
   .rot-item:last-of-type{margin-bottom:0}
+  .rot-item:nth-child(odd){grid-template-columns:.7fr 1.3fr}
+  .rot-item:nth-child(even){grid-template-columns:1.3fr .7fr}
   .rot-img{overflow:hidden;aspect-ratio:3/4}
   .rot-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
   .rot-item:hover .rot-img img{transform:scale(1.04)}
